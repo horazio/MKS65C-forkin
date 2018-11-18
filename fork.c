@@ -35,10 +35,11 @@ int main(){
       read(fd, num, 4);
       int number = (* num % 16) + 5;
       printf("I've decided to wait for %d seconds\n", number);
-      //sleep(number);
+      sleep(number);
       printf("OK I'm done now\n");
       exit(number);
     }
   }
+  printf("We done\n");
   return 0;
 }
